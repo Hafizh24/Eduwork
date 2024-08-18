@@ -1,0 +1,10 @@
+SELECT * from Drugs order BY name ASC ;
+SELECT * from Drugs order BY stock DESC ;
+SELECT * from Drugs where stock = 0;
+SELECT * from Drugs where name LIKE '%as%';
+SELECT * from Drugs WHERE price >= 50000;
+SELECT manufacture_id, SUM(stock) as total_stock from Drugs GROUP BY manufacture_id;
+SELECT * from Drugs where name LIKE '%da%';
+SELECT  * from Drugs where stock <= 50;
+SELECT manufacture_id, SUM(price) as total_price from Drugs group by manufacture_id ;
+SELECT * from Drugs WHERE stock > 50 AND price > 50000; 
